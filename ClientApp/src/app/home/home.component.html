@@ -1,0 +1,8 @@
+<h2>{{carJson}}</h2>
+
+<div *ngFor="let car of cars">
+  <p>Make: {{car.make}}</p>
+  <p>Model: {{car.model}}</p>
+  <p>Year: {{car.year}}</p>
+</div>
+<button (click)="callCarApi()">Load car data</button>
